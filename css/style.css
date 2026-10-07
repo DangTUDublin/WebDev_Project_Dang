@@ -4,6 +4,10 @@
     background-color: bisque;
 }
 
+body{
+    background-color: #AFBBF0;
+}
+
 h1, h2, h3, h4{
     font-family: 'Fauna+One', sans-serif;
 }
