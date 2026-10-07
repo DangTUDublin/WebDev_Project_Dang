@@ -1,0 +1,30 @@
+
+#default {
+    text-align: left;
+    background-color: bisque;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Fauna+One', sans-serif;
+}
+
+
+h1 {
+    color: aqua;
+    text-align: center;
+}
+
+h2 {
+    color:blue;
+    text-align: left;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    color: chocolate;
+    text-align: left;
+}
