@@ -4,6 +4,24 @@
     background-color: bisque;
 }
 
+#flashDeal {
+    text-align: center;
+    background-color: orange;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:red;
+}
+
+#boxedDeal
+{
+    border-width: 5;
+}
+
+div {
+    width: 200;
+    height: 300;
+    background-color: rosybrown;
+}
+
 body{
     background-color: #AFBBF0;
 }
@@ -29,7 +47,7 @@ h3 {
 }
 
 p {
-    color: chocolate;
+    color: darkblue;
     text-align: left;
 }
 
