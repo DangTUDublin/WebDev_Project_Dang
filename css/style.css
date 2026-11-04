@@ -9,6 +9,31 @@
     background-color: orange;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:red;
+    border-width: 5;
+    border-color: brown;
+    border-style: groove;
+    box-sizing: border-box;
+}
+
+/*Header and footer*/
+.general-header
+{
+    background-color: white;
+    margin: 10px 20px 20px 50px;
+}
+.general-footer
+{
+    background-color: aquamarine;
+    margin: 10px 20px 20px 50px;
+}
+
+
+/*Deals related*/
+.deal-container
+{
+    display: flex;
+    padding: 5%;
+    gap: 5px;
 }
 
 #boxedDeal
@@ -16,17 +41,47 @@
     border-width: 5;
 }
 
-div {
+/*Media and formats*/
+#tourPhoto
+{
+    margin: 10px 20px 20px 70px;
+}
+
+.body-background-image
+{
+    background-image: url("https://images.pexels.com/photos/6812369/pexels-photo-6812369.jpeg");
+    background-position: 80%;
+    background-size: auto;
+    border: 2px double white;
+    border-width: 15px;
+    border-radius: 15px;
+}
+
+.dealdescriptor
+{
+    background-color: azure;
+    margin: 10px 20px 20px 70px;
+}
+
+article > p
+{
+    margin: 20px;
+}
+
+div p
+{
     width: 200;
     height: 300;
     background-color: rosybrown;
 }
 
-body{
+body
+{
     background-color: #AFBBF0;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4
+{
     font-family: 'Fauna+One', sans-serif;
 }
 
@@ -51,7 +106,16 @@ p {
     text-align: left;
 }
 
+/*Footer*/
 footer{
     background-color: black;
     text-align: left;
+}
+
+@media (max-width: 1080px)
+{
+    body
+    {
+        background-color: lightblue;
+    }
 }
