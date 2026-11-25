@@ -26,6 +26,36 @@
     text-align-last: center;
 }
 
+#moving-deal
+{
+    font-size: 1.5em;
+    color: red;
+    background-color: yellow;
+    
+    position: absolute;
+    animation: moveRight 10s linear infinite;
+    text-wrap-mode: nowrap;
+    text-wrap-style: stable;
+}
+
+div:has( #moving-deal ){
+    min-height: 2em;
+}
+
+@keyframes moveRight {
+    0% {
+        /*the left property will position the element considering the left edge*/
+        left: 0;
+    }
+    50%{
+        left: 50%;
+    }
+    100% {
+        /*the following function is used to push the element back to the start*/
+        left: 100%;
+    }
+}
+
 #flashDeal {
     text-align: center;
     text-align-last: center;
@@ -37,6 +67,11 @@
     border-style: groove;
     box-sizing: border-box;
     margin: 10px 20px 20px 50px;
+}
+
+#flashDeal:hover
+{
+    color:darkred;
 }
 
 /*Header and footer*/
@@ -60,11 +95,6 @@
     gap: 5px;
 }
 
-#boxedDeal
-{
-    border-width: 5;
-}
-
 #touch-friendly-spacer
 {
     margin-top: 2%;
@@ -82,6 +112,33 @@
     box-sizing: border-box;
     background-color: azure;
     margin: 40px 50px 50px 35px;
+}
+
+/*Button format*/
+.button-styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 10px;
+  background-color: darkblue;
+  background-image: linear-gradient(darkslategrey);
+  box-shadow:
+    inset 2px 2px 3px rgb(255 255 255 / 0.6),
+    inset -2px -2px 3px rgb(0 0 0 / 0.6);
+}
+
+.button-styled:hover {
+  background-color: orange;
+}
+
+.button-styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgb(255 255 255 / 0.6),
+    inset 2px 2px 3px rgb(0 0 0 / 0.6);
 }
 
 /*Media and formats*/
@@ -114,6 +171,20 @@
 article > p
 {
     margin: 20px;
+    
+}
+
+#article-effect
+{
+    font-size: 12;
+    transition: width 1s ease 0.2s;
+}
+
+#article-effect:hover
+{
+    font-size: 22;
+    background-color: RGBA(100, 150, 100, 0.6);
+    animation: forwards;
 }
 
 div p
@@ -160,10 +231,51 @@ footer{
     text-align: left;
 }
 
-@media (max-width: 1080px)
+@media (max-width: 600px)
 {
     body
     {
         background-color: lightblue;
     }
+
+    .deal-container
+    {
+        display: flex;
+        flex-direction: row;
+        padding: 1%;
+        gap: 2px;
+    }
 }
+
+@media (max-width: 1024px)
+{
+    body
+    {
+        background-color: lightblue;
+    }
+
+    .deal-container
+    {
+        display: flex;
+        flex-direction: row;
+        padding: 1%;
+        gap: 2px;
+    }
+}
+
+@media (min-width: 1024px)
+{
+    body
+    {
+        background-color: lightblue;
+    }
+
+    .deal-container
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        gap: 5px;
+    }
+}
+
